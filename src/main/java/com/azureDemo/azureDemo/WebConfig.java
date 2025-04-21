@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
       public void addCorsMappings(CorsRegistry registry) {
             registry.addMapping("/**")
                         .allowedOrigins("http://localhost:4200")
-                        .allowedOrigins("https://kind-sand=0ce665403.6.azurestaticapps.net")
+                        .allowedOrigins("https://kind-sand-0ce665403.6.azurestaticapps.net")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
       }
 
