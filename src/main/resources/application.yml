@@ -1,0 +1,57 @@
+
+# Personal azure db
+spring:
+  datasource:
+    url: jdbc:sqlserver://projectlaas.database.windows.net:1433;database=AzureSpringApp;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: Admin123! 
+    password: Youri123!
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+
+    server:
+      port: 9090
+
+
+# Working Talent azure db
+# spring:
+#   datasource:
+#     url: jdbc:sqlserver://maartprojectlaas.database.windows.net:1433; encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+#     username: Admin123! 
+#     password: Youri123!
+
+#   jpa:
+#     hibernate:
+#       ddl-auto: update
+#     show-sql: true
+#     properties:
+#       hibernate:
+#         dialect: org.hibernate.dialect.SQLServerDialect
+
+#     server:
+#       port: 9090
+
+
+# Postgress local db
+# server:
+#   port: 8080
+
+
+
+# spring:
+#   jpa:
+#     database: POSTGRESQL
+#     show-sql: false
+#     hibernate:
+#       ddl-auto: update
+
+#   datasource:
+#     url: jdbc:postgresql://localhost:5432/azureSpringApp
+#     username: postgres
+#     password: kees123
+#     driver-class-name: org.postgresql.Driver
